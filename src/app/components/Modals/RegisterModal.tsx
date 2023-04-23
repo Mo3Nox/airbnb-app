@@ -40,7 +40,7 @@ const RegisterModal = () => {
         registerModal.onClose();
       })
       .catch((error) => {
-        toast.error("JIGABOO GOT TO ME!");
+        toast.error("Something went wrong!");
       })
       .finally(() => {
         setIsLoading(false);
@@ -68,7 +68,7 @@ const RegisterModal = () => {
       />
       <Input
         id="password"
-        label="Email"
+        label="Password"
         disabled={isLoading}
         register={register}
         errors={errors}
